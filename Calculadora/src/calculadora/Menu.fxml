@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="291.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadora.MenuController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@vestibulando-prova-matematica-sites-gratuitos-noticias-1442442266521.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar prefHeight="25.0" prefWidth="142.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Inicio">
+            <items>
+                  <MenuItem fx:id="btnhistorico" mnemonicParsing="false" onAction="#historico" text="Historico" />
+              <MenuItem fx:id="btncalculadora" mnemonicParsing="false" onAction="#calculadora" text="Calculadora" />
+            </items>
+          </Menu>
+        </menus>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </MenuBar>
+   </children>
+</AnchorPane>

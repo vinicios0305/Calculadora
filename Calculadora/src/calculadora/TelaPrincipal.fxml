@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="304.0" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadora.TelaPrincipalController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextField fx:id="txtNumero1" depthTest="DISABLE" layoutX="86.0" layoutY="38.0" />
+      <TextField fx:id="txtNumero2" layoutX="86.0" layoutY="100.0" />
+      <Button fx:id="btnSomar" layoutX="88.0" layoutY="145.0" mnemonicParsing="false" onAction="#somar" text="+" />
+      <Label fx:id="lblNumero1" layoutX="130.0" layoutY="21.0" text="NÚMERO 1" />
+      <Label fx:id="lblNumero2" layoutX="131.0" layoutY="83.0" text="NÚMERO 2" />
+      <Label fx:id="lblResultado" layoutX="129.0" layoutY="186.0" text="RESULTADO" />
+      <TextField fx:id="txtResultado" layoutX="88.0" layoutY="214.0" />
+      <Button layoutX="131.0" layoutY="145.0" mnemonicParsing="false" onAction="#subtrair" text="-" />
+      <Button layoutX="172.0" layoutY="145.0" mnemonicParsing="false" onAction="#multiplicar" text="*" />
+      <Button layoutX="214.0" layoutY="145.0" mnemonicParsing="false" onAction="#dividir" text="/" />
+      <Button fx:id="btnhistorico" layoutX="157.0" layoutY="256.0" mnemonicParsing="false" onAction="#historico" text="HISTORICO" />
+      <Button fx:id="bntmenu" layoutX="88.0" layoutY="256.0" mnemonicParsing="false" onAction="#menu" text="MENU" />
+    </children>
+</AnchorPane>

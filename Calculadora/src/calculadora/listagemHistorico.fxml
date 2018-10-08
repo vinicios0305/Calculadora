@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+<AnchorPane id="tbhistorico" fx:id="ac" prefHeight="326.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadora.ListagemHistoricoController">
+   <children>
+      <TableView fx:id="tbhistorico" layoutX="84.0" layoutY="27.0" prefHeight="234.0" prefWidth="380.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ID">
+              <cellValueFactory>
+                  <PropertyValueFactory property="id" /> 
+              </cellValueFactory>
+          </TableColumn>
+              
+          <TableColumn prefWidth="75.0" text="NÚMERO 1">
+              <cellValueFactory>
+                  <PropertyValueFactory property="numero1" /> 
+              </cellValueFactory>
+          </TableColumn>
+              
+            <TableColumn prefWidth="75.0" text="NÚMERO 2">
+                <cellValueFactory>
+                  <PropertyValueFactory property="numero2" /> 
+              </cellValueFactory>
+          </TableColumn>
+                
+            <TableColumn prefWidth="75.0" text="OPERADOR">
+                <cellValueFactory>
+                  <PropertyValueFactory property="operador" /> 
+              </cellValueFactory>
+          </TableColumn>
+                
+                
+            <TableColumn prefWidth="75.0" text="RESULTADO">
+                <cellValueFactory>
+                  <PropertyValueFactory property="resultado" /> 
+              </cellValueFactory>
+          </TableColumn>
+                
+        </columns>
+      </TableView>
+      <Button fx:id="btnvoltar" layoutX="309.0" layoutY="272.0" mnemonicParsing="false" onAction="#voltar" text="VOLTAR" />
+      <Button fx:id="btnmenu" layoutX="194.0" layoutY="272.0" mnemonicParsing="false" onAction="#menu" text="MENU" />
+   </children>
+</AnchorPane>
